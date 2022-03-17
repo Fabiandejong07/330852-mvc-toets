@@ -1,16 +1,16 @@
 <?php
 
-class Pages extends Controller {
+class countries extends Controller {
     public function __construct() {
-       $this->userModel = $this->model('User');
+       $this->countryModel = $this->model('Country');
     }
     public function index() {
-        $users = $this->userModel->getUSers();
+        $countrie = $this->countryModel->getCountries();
         $data = [
        'title' => 'Home page',
-       'users' => $users
+       'countrie' => $countrie
         ];
-        $this->view('pages/index', $data);
+        $this->view('countries/index', $data);
     
     }
 }
