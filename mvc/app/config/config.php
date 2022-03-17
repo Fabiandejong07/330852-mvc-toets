@@ -8,7 +8,7 @@ define('DB_NAME', 'mvcframework');
 define('APPROOT', dirname(dirname(__FILE__)));
 
 //URLROOT (DYNAMIC LINKS)
-define('URLROOT', 'http://www.mvc-330852-framework.org');
+define('URLROOT', 'http://www.mvc-toets.org');
 
 //SITENAMe
 

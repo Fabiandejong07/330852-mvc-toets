@@ -7,7 +7,7 @@
 
       }
       public function getUsers() {
-          $this->db->query("SELECT * FROM users");
+          $this->db->query("SELECT * FROM country");
           $result = $this->db->resultSet();
           return $result;
       }

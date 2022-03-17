@@ -16,6 +16,15 @@ public function index() {
 public function about() {
     $this->view('pages/about');
 }
+public function countries() {
+    $users = $this->userModel->getUSers();
+    $data = [
+   'title' => 'Home page',
+   'users' => $users
+    ];
+    $this->view('pages/countries', $data);
+
+}
 
 
 }
