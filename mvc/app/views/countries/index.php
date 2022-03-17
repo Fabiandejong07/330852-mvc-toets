@@ -1,17 +1,20 @@
 <?php 
 
   foreach ($data['country'] as $countrie) {
+      
    echo "informatien:" . $countrie->id . $countrie->name . $countrie->capitalCity . $countrie->continent . $countrie->population;
    echo "<br>";
-    $data .= "<tr><th scope='row'>" . $countrie->id  . "</th>
-    <td>  . $countrie->id . </td>
-    <td> . $countrie->name  . </td>
-    <td> . $countrie->capitalCity . </td>
-    <td> .  $countrie->continent .</td>
-    <td>  .  $countrie->population . </td>
+    $data .= "<tr><th scope='row'>" .  $countrie->id  . "</th>
+    <td> ".  $countrie->id ." </td>
+    <td>".  $countrie->name   . " </td>
+    <td>" .  $countrie->capitalCity  . "</td>
+    <td> " .  $countrie->continent . " </td>
+    <td> " .    $countrie->population . " </td>
 
 
     ";
+  
+
   }
 ?>
 
